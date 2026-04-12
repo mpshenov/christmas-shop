@@ -594,7 +594,7 @@ img, div {
 
 
 .burger-btn {
-    display: none;          /* hidden on desktop */
+    display: none; 
     flex-direction: column;
     justify-content: center;
     gap: 5px;
