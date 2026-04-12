@@ -564,6 +564,13 @@ img, div {
     color:inherit;
 }
 
+.gifts_body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 html {
   scroll-behavior: smooth;
 }
