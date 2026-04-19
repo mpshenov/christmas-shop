@@ -704,13 +704,8 @@ footer {
 }
 
 
-.gifts-page-wrapper {
-    width: var(--max-width-page);
-    overflow-x: hidden;
-}
-
-.gifts {
-    display: flex;
+.burger-btn {
+    display: none; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
