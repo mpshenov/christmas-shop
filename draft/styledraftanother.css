@@ -1,0 +1,1201 @@
+/* Added Montserrat font*/
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Added Allura font*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.body_wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+/* Typography*/
+.font-color-dark {
+    color: var(--Dark, #181C29);
+}
+.font-color-white {
+    color: var(--Static-White, #FFFFFF);
+}
+.font-color-red {
+    color: var(--Primary, #FF4646);
+}
+.font-color-blue {
+    color: var(--Tag-Purple, #4361FF);
+}
+.font-color-green {
+    color: var(--Tag-Green, #06A44F);
+}
+.font-color-pink {
+    color: var(--Tag-Pink, #FF43F7);
+
+}
+
+.font-family-montserrat {
+    font-family: "Montserrat";
+}
+.font-family-allura {
+    font-family: "Allura";
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+.font-size-36 {
+    font-size: 36px;
+}
+.font-size-80 {
+    font-size: 80px;
+}
+
+.line-height-100 {
+    line-height: 100%;
+}
+.line-height-130 {
+    line-height: 130%;
+}
+.line-height-148 {
+    line-height: 148%;
+}
+.line-height-150 {
+    line-height: 150%;
+}
+.line-height-152 {
+    line-height: 152%;
+}
+
+.letter-spacing-0 {
+    letter-spacing: 0em;
+}
+
+.letter-spacing-5 {
+    letter-spacing: 0.05em;
+}
+.letter-spacing-8 {
+    letter-spacing: 0.08em;
+}
+.letter-spacing-16{
+    letter-spacing: 0.16em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Added background image */
+.About, .Slider, .Best_Gifts {
+    background-image: url("images/bg-snow.png");
+    background-color: #FF4646;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Hero {
+    background-image: url("images/bg-ball.png");
+    background-color: #FF4646;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.CTA {
+    background-image: url("images/bg-forest.png");
+    background-color: #FF4646;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Gifts {
+    background-color: #FF4646;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    
+}
+
+
+
+/* Adjusted the size of the sections*/
+header {
+    min-height: 64px;
+}
+.Hero {
+    min-height: 524px;
+}
+.About {
+    min-height: 648px;
+}
+.Slider {
+    min-height: 488px;
+}
+.Best_Gifts {
+    min-height: 554px;
+}
+.CTA {
+    min-height: 668px;
+}
+footer {
+    min-height: 496px;
+}
+
+/* Adjusted the size of containers */
+.Hero {
+    width: 1440px;
+    height: 524px;
+}
+.hero-container {
+    width: 426px;
+    height: 404px;
+}
+.about_container {
+    width: 1276px;
+    height: 528px;
+}
+.slider_container {
+    width: 1276px;
+    height: 368px;
+}
+.best_gifts_container {
+    width: 1276px;
+    height: 434px;
+}
+.cta_container {
+    width: 1276px;
+    height: 548px;
+}
+.contacts_container {
+    width: 1276px;
+    height: 204px;
+}
+footer {
+    width: 1440px;
+    height: 496px;
+}
+.footer_container {
+    width: 1276px;
+    height: 376px;
+}
+.footer_block {
+    width: 1276px;
+    height: 112px;
+}
+
+.Gifts {
+    width: 1440px;
+    height: 1394px;
+}
+
+/*Adjusted images sizes*/
+.icon {
+    width: 24px;
+    height: 24px;
+}
+.santa-snowman {
+    width: 638px;
+    height: 528px;
+}
+.snowman, .tree-presents, .christmas-ball {
+    width: 200px;
+    height: 200px;
+}
+.gift-work, .gift-health, .gift-harmony, .gift-harmony {
+    width: 310px;
+    height: 230px;
+}
+.santa, .tree, .snake {
+    width: 80px;
+    height: 80px;
+}
+.telegram, .facebook, .instagram, .x {
+    width: 24px;
+    height: 24px;
+}
+
+
+/*Adjusted positioning*/
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.header_left-block {
+    display: flex;
+    width: 141px;
+    height: 40px;
+    padding: 20px 8px 20px 8px;
+    gap: 8px;
+    align-items: center;
+}
+
+.header_right-block {
+    display: flex;
+    width: 1123px;
+    height: 40px;
+    padding: 0px;
+    gap: 0px;
+    justify-content: end;
+
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 426px;
+    height: 404px;
+}
+
+.center {
+    text-align: center;
+}
+
+.explore {
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 56px;
+}
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_container {
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.about_content-wrapper {
+    display: grid;
+    align-items: center;
+    width: 638px;
+    height: 528px;
+}
+
+.about_content-block {
+    padding: 0 60px 0 60px;
+    width: 426px;
+    height: 328px;
+}
+
+.Slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_header-wrapper {
+    width: 426px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-block {
+    width: 426px;
+    height: 24px;
+}
+
+.lower-block {
+    width: 426px;
+    height: 72px;
+}
+
+.slider_content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 1276px;
+    height: 200px;
+}
+
+.Best_Gifts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_gifts_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 1276px;
+    height: 434px;
+}
+
+.best_gifts_content {
+    display: flex;
+    justify-content: space-between;
+    width: 1276px;
+    height: 342px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 310px;
+    height: 342px;
+}
+
+.CTA {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 426px;
+    height:428px;
+}
+
+.countdown_date {
+    display: flex;
+    width:344px;
+    height:72px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown_date-days, .countdown_date-hours, .countdown_date-minutes, .countdown_date-seconds {
+    width: 80px;
+    height: 52px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Contacts {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 496px;
+}
+.contacts_container {
+    display: grid;
+
+}
+.contacts_upper-block {
+    display: flex;
+    justify-content: space-around;
+}
+.contacts_phone {
+    display: grid;
+}
+.contacts_meeting {
+    display: grid;
+}
+.contacts_email {
+    display: grid;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_block {
+    display: grid;
+    justify-content: center;
+}
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.Gifts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gifts_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1276px;
+    height: 1274px;
+}
+
+.gifts_header {
+    width: 426px;
+    height: 144px;
+
+}
+.gifts_tabs {
+    width: 474px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.all_tab {
+    width: 65px;
+    height: 40px;
+}
+.work_tab {
+    width: 116px;
+    height: 40px;
+}
+.health_tab {
+    width: 126px;
+    height: 40px;
+}
+.harmony_tab {
+    width: 143px;
+    height: 40px;
+}
+
+.gifts_cards {
+    width: 1276px;
+    height: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#overlay {
+    position: absolute;
+    top: 10em;
+    text-align: center;
+    width: 426px;
+    height: 144px;
+    font-family: 'Montserrat';
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    gap: 20px;
+}
+
+img, div {
+    border-radius: 20px;
+}
+
+.Hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.CTA {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  opacity: 0.6;    
+}
+.disabled:hover {
+    text-decoration: none;
+    color:inherit;
+}
+
+.gifts_body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gifts_header {
+    width: 426px;
+    height: 144px;
+}
+
+.garland {
+    width: 1440px;
+    height: 200px;
+}
+
+#overlay {
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 3em;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 18%;
+}
+
+
+.burger-btn {
+    display: none;          /* hidden on desktop */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+}
+.burger-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #181C29;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.burger-btn.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger-btn.active span:nth-child(2) { opacity: 0; }
+.burger-btn.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@media (min-width: 381px) and (max-width: 768px) {
+    .header_right-block { display: none; }
+    .burger-btn         { display: flex; }
+
+    .header_right-block nav {
+        display: none;}
+        .burger-menu {
+        display: flex; }
+
+.body_wrapper {
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    min-height: 64px;
+    box-sizing: border-box;
+}
+ 
+.header_container {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+ 
+.header_left-block {
+    width: auto;
+}
+ 
+.header_right-block {
+    width: auto;
+    display: none;
+}
+ 
+
+.Hero {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding: 60px 16px;
+    box-sizing: border-box;
+}
+ 
+.hero_container {
+    width: 100%;
+    max-width: 426px;
+    height: auto;
+    gap: 16px;
+}
+
+.About {
+    width: 100%;
+    min-height: auto;
+    box-sizing: border-box;
+}
+
+.about_container {
+    width: 100%;
+    height: 528px;
+    align-items: center;
+    box-sizing: border-box;
+}
+ 
+.about_content-wrapper {
+    width: 376px;
+    height: 528px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.about_content-block {
+    width: 256px;
+    height: 436px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.about_img-wrapper {
+    width: 376px;
+    height: 528px;
+}
+ 
+.santa-snowman {
+    width: 376px;
+    height: 528px;
+    object-fit: cover;
+}
+
+.Slider {
+    width: 768px;
+    min-height: 488px;
+    overflow: hidden;
+}
+
+.slider_container {
+    width: 752px;
+    height: 368px;
+    box-sizing: border-box;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider_header-wrapper {
+    width: 426px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-block {
+    width: 426px;
+    height: 24px;
+}
+.lower-block {
+    width: 426px;
+    height: 36px;
+}
+h2, p {
+    margin: 0px;
+    
+}
+
+.slider_content-wrapper {
+    width: 1993px;
+    height: 200px;
+    overflow: visible;
+    display: flex;
+    justify-self: flex-end;
+}
+
+
+.live {
+    width: 184px;
+    height: 98px;
+}
+
+.create {
+    width: 330px;
+    height: 98px;
+}
+ 
+.snowman, .tree-presents, .christmas-ball {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.Best_Gifts {
+    width: 100%;
+    min-height: auto;
+}
+
+.best_gifts_container {
+    width: 100%;
+    height: auto;
+    padding: 40px 16px;
+    box-sizing: border-box;
+}
+
+.best_gifts_content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+ 
+.card {
+    width: 310px;
+    height: 342px;
+    box-sizing: border-box;
+}
+
+.card_content {
+    width: 310px;
+    height: 112px;
+}
+
+.gift-work, .gift-health, .gift-harmony {
+    width: 100%;
+    height: auto;
+}
+
+.CTA {
+    width: 768px;
+    height: 668px;
+
+}
+
+.cta_container {
+    width: 752px;
+    height: 548px;
+    padding: 40px 16px;
+    box-sizing: border-box;
+}
+ 
+.cta_block {
+    width: 426px;
+    height: 428px;
+    gap: 24px;
+}
+ 
+.countdown_date {
+    width: 344px;
+    height: 72px;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 768px;
+    height: 928px;
+    box-sizing: border-box;
+}
+
+.Contacts {
+    width: 752px;
+    height: 808px;
+}
+ 
+.footer_container {
+    width: 752px;
+    height: 636px;
+}
+ 
+
+.contacts_container {
+    width: 752px;
+    height: auto;
+}
+ 
+.contacts_upper-block {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.contacts_phone,
+.contacts_meeting,
+.contacts_email {
+    width: 752px;
+    height: 204px;
+    text-align: center;
+}
+.santa-claus, .tree, .snake{
+    margin:auto;
+}
+ 
+.footer_block {
+    width: 752px;
+    height: 112px;
+    margin-top: 10px;
+}
+
+
+.gifts_body-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#overlay {
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 4em;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 18%;
+}
+
+.Gifts {
+    width: 768px;
+    height: 2456px;
+}
+.gifts_body-wrapper {
+    width: 768px;
+    max-width: 768px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.gifts_container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+ 
+.gifts_header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+ 
+.garland {
+    width:768px;
+    height:108px;
+}
+ 
+.gifts_tabs {
+    width: 100%;
+    max-width: 474px;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: auto;
+}
+ 
+.gifts_cards {
+    width: 752px;
+    height: 2112px;
+    grid-template-columns: repeat(2, auto);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
+
+@media (max-width: 380px) {
+
+    .header_right-block {
+        display: none;
+    }
+    
+    .body_wrapper {
+        width: 380px;
+        max-width: 380px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 380px;
+        height: 64px;
+    }
+
+    
+ 
+    .Hero {
+        width:380px;
+        height: 572px;
+    }
+ 
+    .hero_container {
+        width: 364px;
+        height: 452px;
+    }
+
+    .About {
+        width: 380px;
+        height:1000px;
+        flex: none;
+    }
+ 
+    .about_container {
+        display: grid;
+        width: 364px;
+        height: 880px;
+    }
+
+    .about_content-wrapper {
+        width: 364px;
+        height: 352px;
+    }
+
+    .about_img-wrapper {
+        width: 364px;
+        height: 528px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .santa-snowman {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about_content-block {
+        width: 324px;
+        height: 352px;
+        padding: 0;
+    }
+
+    .slider_container {
+        width: 364px;
+        height: 368px;
+    }
+
+    .slider_header-wrapper {
+        width: 364px;
+        height: 72px;
+    }
+
+    .slider_content-wrapper {
+        width: 1993px;
+        height: 200px;
+    }
+ 
+    .snowman, .tree-presents, .christmas-ball {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Best_Gifts {
+        width: 380px;
+        height: 1616px;
+    }
+
+    .best_gifts_container {
+        width: 364px;
+        height: 1404px;
+    }
+
+    .best_gifts_header {
+        width: 364px;
+        height: 72px;
+        margin:0px;
+    }
+
+    h2, p {
+        margin: 0px;
+    }
+ 
+    .best_gifts_content {
+        width: 364px;
+        height: 1404px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .CTA {
+        width: 380px;
+        height: 704px;
+    }
+ 
+    .cta_container {
+        width: 364px;
+        height: 584px;
+    }
+ 
+    .cta_block {
+        width: 364px;
+        height: 464px;
+    }
+    .explore {
+        width: 100%;
+        max-width: 235px;
+    }
+ 
+   footer {
+        width:380px;
+        height: 928px;
+    }
+    .Contacts {
+        width:380px;
+        height: 928px;
+    }
+
+    .footer_container {
+        width: 364px;
+        height: 808px;
+    }
+
+    .contacts_container {
+        width: 364px;
+        height: 636px;
+    }
+
+    .contacts_upper-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts_phone, .contacts_meeting, .contacts_email {
+        width: 364px;
+        height: 204px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_block {
+        width: 364px;
+        height: 112px;
+    }
+ 
+    .gifts_container {
+        padding: 0 12px;
+    }
+ 
+    .gifts_tabs {
+        justify-content: center;
+    }
+ 
+    .gifts_cards {
+        grid-template-columns: 1fr;
+    }
+ 
+    .countdown_date {
+        max-width: 100%;
+    }
+ 
+    .countdown_date-days,
+    .countdown_date-hours,
+    .countdown_date-minutes,
+    .countdown_date-seconds {
+        width: 60px;
+    }
+
+    #overlay {
+    position: absolute;
+    font-family: 'Montserrat';
+    top: 4em;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 18%;
+    width: 364px;
+    height: 240px;
+}
+
+.Gifts {
+    width: 380px;
+    height: 4676px;
+    justify-content:flex-start;
+}
+
+.gifts_body-wrapper {
+    width: 380px;
+    max-width: 380px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.gifts_container {
+    width: 364px;
+    height: 4556px;
+    justify-content: flex-end;
+}
+ 
+.gifts_header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+ 
+.garland {
+    width:380px;
+    height:53px;
+}
+ 
+.gifts_tabs {
+    width: 354px;
+    height: 40px;
+}
+ 
+.gifts_cards {
+    width: 364px;
+    height: 4236px;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
+}
+}
