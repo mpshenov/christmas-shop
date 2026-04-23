@@ -15,6 +15,7 @@
 
     --radius: 20px;
 
+    --header-height: 24px;
     --max-width-page:      1440px;
     --max-width-container: 1276px;
 }
@@ -79,15 +80,13 @@ html {
 
 .body-wrapper,
 .gifts-page-wrapper {
-    width: var(--max-width-page);
+    width: 100%;
     margin: 0 auto;
-    background-color: var(--color-white);
-}
-
-.gifts-page-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: var(--color-white);
 }
 
 
@@ -125,7 +124,8 @@ html {
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
     border-radius: var(--radius);
 }
 
@@ -224,13 +224,21 @@ header {
     opacity: 0.6;
 }
 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 524px;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
 }
 
 .hero-container {
@@ -283,7 +291,8 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 648px;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
 }
 
 .about-container {
@@ -352,7 +361,8 @@ header {
     align-items: center;
     min-height: 488px;
     overflow: hidden;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
 }
 
 .slider-container {
@@ -446,7 +456,8 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 554px;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
 }
 
 .best-gifts-container {
@@ -534,7 +545,8 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 668px;
-    width: var(--max-width-page);
+    width: 100%;
+    max-width: var(--max-width-page);
 }
 
 .cta-container {
@@ -583,6 +595,7 @@ header {
     height: 72px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: var(--radius);
+    max-width: var(--max-width-container);
 }
 
 .countdown-unit {
@@ -612,7 +625,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: var(--max-width-page);
+    width: 100%;
     min-height: 496px;
 }
 
@@ -620,7 +633,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: var(--max-width-container);
+    width: 100%;
     height: 376px;
     gap: 60px;
 }
@@ -704,11 +717,6 @@ footer {
 }
 
 
-.gifts-page-wrapper {
-    width: var(--max-width-page);
-    overflow-x: hidden;
-}
-
 .gifts {
     display: flex;
     flex-direction: column;
@@ -723,7 +731,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: var(--max-width-container);
+    max-width: var(--max-width-container);
 }
 
 .gifts-container h1 {
@@ -762,6 +770,8 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     width: 100%;
+    justify-items: center;
+    white-space: wrap;
 }
 
 .gifts-cards a {
@@ -769,6 +779,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 310px;
+    height: 342px;
 
 }
 
@@ -776,10 +788,6 @@ footer {
     width: 100%;
 }
 
-#scroll-top {
-    display: none;
-    background-color: var(--color-white);
-}
 
 .tab.active {
     background-color: var(--color-white);
@@ -790,10 +798,80 @@ footer {
     display: none;
 }
 
-@media (min-width: 381px) and (max-width: 768px) {
-    #scroll-top {
-    display: flex;
+#scroll-button {
+  display: none;
+  position: fixed; 
+  bottom: 8px;
+  right: 8px;
+  z-index: 999; 
+  border: 1px solid var(--color-red); 
+  background-color: var(--color-white);
+  color: var(--color-white);
+  cursor: pointer; 
+  padding: 16px; 
+  border-radius: 28px; 
+}
+
+@media (min-width: 1000px) and (max-width: 1292px) {
+    .gifts-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
+}
+
+    .best-gifts-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1001px) {
+    .gifts-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
+}
+    .best-gifts-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 650px) {
+    .gifts-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
+}
+
+    .best-gifts-content {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-items: center;
+    white-space: wrap;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 768px) {   
+    
     
     body.lock { overflow: hidden; }
 
@@ -819,7 +897,7 @@ footer {
         position: fixed;
         right: -100%;
         top:64px;
-        height: 960px;
+        height: calc(100vh - var(--header-height));
         gap: 0;
         flex-direction: column;
         justify-content: center;
@@ -844,7 +922,6 @@ footer {
 
     .body-wrapper,
     .gifts-page-wrapper {
-        width: 100%;
         max-width: 768px;
     }
 
@@ -945,13 +1022,14 @@ footer {
 
     .best-gifts-content {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .best-gifts-container a {
-        width: inherit;
+        width: 310px;
+        height: 342px;
         display: flex;
     }
 
@@ -1053,9 +1131,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-    #scroll-top {
-    display: flex;
-    }
 
        body.lock { overflow: hidden; }
 
@@ -1081,7 +1156,7 @@ footer {
         position: fixed;
         right: -100%;
         top:64px;
-        height: 748px;
+        height: calc(100vh - var(--header-height));
         gap: 0;
         flex-direction: column;
         justify-content: center;
