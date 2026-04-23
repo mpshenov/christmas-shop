@@ -1,5 +1,5 @@
 
-/* 1 */
+/* 1 burger menu */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -20,7 +20,7 @@ navLinks.forEach(link => {
 });
 
 
-/* 2 */
+/* 2 Slider */
 
 const sliderContent = document.querySelector('.slider-content');
 const btnLeft = document.querySelector('.left-button');
@@ -67,7 +67,7 @@ window.addEventListener('resize', () => {
 updateSlider();
 
 
-/* 3 */
+/* 3 Timer*/
 function updateCountdown() {
     const now = new Date();
     const currentYear = now.getUTCFullYear();
@@ -91,7 +91,7 @@ updateCountdown();
 
 setInterval(updateCountdown, 1000);
 
-/*4*/
+/*4 best gifts*/
 const gifts = [
   {
     category: "for work",
@@ -173,21 +173,20 @@ function renderRandomCards() {
 
 document.addEventListener("DOMContentLoaded", renderRandomCards);
 
-/* 5 */
-const scrollBtn = document.getElementById('scrollToTop');
+/* 6 scroll top */
+let mybutton = document.getElementById("scroll-button");
 
-window.addEventListener('scroll', () => {
-  // Logic: Show button only if scrolled more than 300px
-  if (window.scrollY > 300) {
-    scrollBtn.classList.add('visible');
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
   } else {
-    scrollBtn.classList.remove('visible');
+    mybutton.style.display = "none";
   }
-});
+}
 
-scrollBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+function gotopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
